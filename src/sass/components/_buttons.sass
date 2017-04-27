@@ -16,8 +16,17 @@
     &_site
         background-color: $blue
         color: $white
+        &--negative
+            background-color: $black
+            color: $white
+        &--positive
+            background-color: $white
+            color: $blue
+
     &_circle
         &--x12
             border-radius: 12px
+        &--x50
+            border-radius: 50px
     &_ghost
         +btnGhost

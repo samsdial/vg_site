@@ -1,0 +1,73 @@
+.slider
+    position: relative
+    width: 820px
+    height: 45vh
+    overflow: hidden
+    background-color: $blue
+
+.slick_content
+    position: relative
+    opacity: 1
+    display: table
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    height: 66vh
+    +font-smoothing
+    .info
+        position: absolute
+        top: 25%
+        right: 12%
+        // +center(x)
+        vertical-align: middle
+        text-align: right
+.slider-nav
+    .item
+        position: relative
+        vertical-align: middle
+        .image,
+        .data
+            display: inline-block
+            width: 80%
+            vertical-align: middle
+            position: relative
+            margin: 0 12%
+            padding: 12px
+            +media($mobile)
+                width: 100%
+                margin: 0
+            +media($tablet)
+                width: 45%
+                margin: 0
+.slick-prev,
+.slick-next
+    // top: inherit
+    top: 45%
+    bottom: 16px
+    background-color: rgba($white, .5)
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    z-index: 90
+.slick-prev
+    left: 2%
+    &:before
+        content: "\f104"
+        font-family: 'icomoon' !important
+        speak: none
+        font-style: normal
+        font-weight: normal
+        font-variant: normal
+        text-transform: none
+        font-size: 20px
+.slick-next
+    right: 2%
+    &:before
+        content: "\f105"
+        font-family: 'icomoon' !important
+        speak: none
+        font-style: normal
+        font-weight: normal
+        font-variant: normal
+        text-transform: none
+        font-size: 20px

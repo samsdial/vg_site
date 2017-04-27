@@ -130,6 +130,9 @@ $gutter: 1rem
   .aside, .main, .menu
     flex: 1 100%
 
+.Grid--banner
+    .apart
+        flex: 1 100%
 /* One of -- columns*/
 .Grid--1of2 > .Grid-cell,
 .Grid--1of4 > .Grid-cell:first-of-type,
@@ -158,6 +161,10 @@ $gutter: 1rem
     .aside
       flex: 1 calc(25% - #{$gutter})
 
+  .Grid--banner
+    .apart
+      flex: 1 calc(25% - #{$gutter})
+
   .Grid--1of2 > .Grid-cell
     flex: 0 0 50%
 
@@ -179,7 +186,12 @@ $gutter: 1rem
     .Grid--cols-6 > .Grid-cell,
     .Grid--cols-12 > .Grid-cell
         flex: 1
-
+    .Grid--banner
+        .apart
+            flex: 1
+        .aside-1
+            flex: 4
+            padding-left: 0
     .Grid--holly-grail
         .menu
             flex: 3

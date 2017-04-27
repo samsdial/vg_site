@@ -11,10 +11,11 @@ block content
                                 .title.txt_fonTwo.txt_upper.cl--white
                                     h5 Categorías
                                     span.icon.icon-plus
-                            .megamenu_v
+                            .megamenu_v.bgc--white
                                 ul
-                                    li
-                                        a(href="") Item
+                                    - for (var x = 0; x < 6; x++)
+                                        li
+                                            a(href="") Item
                 .Grid-cell.menu.bgc--white
                     nav
                         ul.nav_site
@@ -33,6 +34,23 @@ block content
                             span.icon.icon-facebook
                             a.btn.btn_ghost(href="#")
         .container
-            .row
-                .column.column-middle
-                    h2 Contenido
+            .Grid.Grid--gutters.Grid--banner
+                .Grid-cell.apart.bgc--white
+                .Grid-cell.apart.aside-1
+                    .slider
+                        .slick_content(style="background-image: url(images/banner/01.png)")
+                            .info
+                                .title.txt_size--x50.txt_upper.cl--white
+                                    h2 Titulo
+                                .subtitle.mg_bottom--x20.txt_capital.cl--white
+                                    p subtitulo
+                                .click
+                                    a.btn.btn_site--positive.btn_circle--x50(href="#") ver mas.
+                        .slick_content(style="background-image: url(images/banner/01.png)")
+                            .info
+                                .title.txt_size--x50.txt_upper.cl--white
+                                    h2 Mantenemos A los Animales
+                                .subtitle.mg_bottom--x20.txt_capital.cl--white
+                                    p En las mejores condiciones para garantizar un óptimo desarrollo genetico
+                                .click
+                                    a.btn.btn_site--positive.btn_circle--x50(href="#") ver mas.

@@ -1,1 +1,1 @@
-var dia=6;switch(dia){case 1:console.log("Es lunes");break;case 2:console.log("Es martes");break;case 3:console.log("Es miercoles");break;case 4:console.log("Es jueves");break;case 5:console.log("Es viernes");break;default:console.log("Sabado o domingo")}console.info("Resto del programa");
+$(function(){$(".slider").slick({dots:!0,infinite:!0,speed:500,fade:!0,cssEase:"linear",autoplay:!0,autoplaySpeed:7e3})});

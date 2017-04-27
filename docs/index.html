@@ -26,6 +26,7 @@
     <meta name="twitter:url" content="">
     <meta name="twitter:title" content="Ventaja Gentica">
     <meta name="twitter:description" content="Descricion">
+    <link href="https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css" rel="stylesheet" media="screen">
     <link href="css/normalize.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Raleway:300,400,500,600,700,800,900" rel="stylesheet">
@@ -84,8 +85,13 @@
                     <h5>Categorías</h5><span class="icon icon-plus"></span>
                   </div>
                 </div>
-                <div class="megamenu_v">
+                <div class="megamenu_v bgc--white">
                   <ul>
+                    <li><a href="">Item</a></li>
+                    <li><a href="">Item</a></li>
+                    <li><a href="">Item</a></li>
+                    <li><a href="">Item</a></li>
+                    <li><a href="">Item</a></li>
                     <li><a href="">Item</a></li>
                   </ul>
                 </div>
@@ -114,29 +120,58 @@
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="column column-middle">
-            <h2>Contenido</h2>
+        <div class="Grid Grid--gutters Grid--banner">
+          <div class="Grid-cell apart bgc--white"></div>
+          <div class="Grid-cell apart aside-1">
+            <div class="slider">
+              <div class="slick_content" style="background-image: url(images/banner/01.png);">
+                <div class="info">
+                  <div class="title txt_size--x50 txt_upper cl--white">
+                    <h2>Titulo</h2>
+                  </div>
+                  <div class="subtitle mg_bottom--x20 txt_capital cl--white">
+                    <p>subtitulo</p>
+                  </div>
+                  <div class="click"><a class="btn btn_site--positive btn_circle--x50" href="#">ver mas.</a></div>
+                </div>
+              </div>
+              <div class="slick_content" style="background-image: url(images/banner/01.png);">
+                <div class="info">
+                  <div class="title txt_size--x50 txt_upper cl--white">
+                    <h2>Mantenemos A los Animales</h2>
+                  </div>
+                  <div class="subtitle mg_bottom--x20 txt_capital cl--white">
+                    <p>En las mejores condiciones para garantizar un óptimo desarrollo genetico</p>
+                  </div>
+                  <div class="click"><a class="btn btn_site--positive btn_circle--x50" href="#">ver mas.</a></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <footer>
+    <section class="max bgc--blue">
       <div class="container">
         <div class="Grid Grid--full">
           <div class="Grid-cell">
-            <ul class="navigation">
-              <li><a>item</a></li>
-              <li><a>item</a></li>
-              <li><a>item</a></li>
-              <li><a>item</a></li>
-              <li><a>item</a></li>
-              <li><a>item</a></li>
-            </ul>
+            <div class="content cl--white">
+              <h3>Suscribete</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="max bgc--silver">
+      <div class="container">
+        <div class="Grid Grid--full">
+          <div class="Grid-cell">
+            <h2>Footer</h2>
           </div>
         </div>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
