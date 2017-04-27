@@ -1,1 +1,23 @@
 // buttons
+// buttons
+.btn
+    border: none
+    box-shadow: none
+    border-radius: none
+    font-size: 1.4rem
+    font-family: $primary-font
+    padding: 0.8em 2.2em
+    cursor: pointer
+    text-transform: uppercase
+    font-weight: 600
+    -webkit-appearance: inherit
+    cursor: pointer
+    +transition(all 0.3s ease-in-out)
+    &_site
+        background-color: $blue
+        color: $white
+    &_circle
+        &--x12
+            border-radius: 12px
+    &_ghost
+        +btnGhost

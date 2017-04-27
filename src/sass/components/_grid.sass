@@ -127,7 +127,7 @@ $gutter: 1rem
   flex: 0 0 calc(33.3333% - #{$gutter})
 
 .Grid--holly-grail
-  .aside, .main
+  .aside, .main, .menu
     flex: 1 100%
 
 /* One of -- columns*/
@@ -181,12 +181,15 @@ $gutter: 1rem
         flex: 1
 
     .Grid--holly-grail
+        .menu
+            flex: 3
         .main
             flex: 2
         .aside
             flex: 1
         .aside-1
             order: 1
+        .menu,
         .main
             order: 2
         .aside-2

@@ -3,17 +3,35 @@ extends ./base/layout.pug
 block content
     main
         .container
-            .row
-                .column
+            .Grid.grid--gutters.Grid--holly-grail
+                .Grid-cell.aside.aside-1
+                    .megamenu
+                        .megamenu_container
+                            .megamenu_title.bgc--blue
+                                .title.txt_fonTwo.txt_upper.cl--white
+                                    h5 Categorías
+                                    span.icon.icon-plus
+                            .megamenu_v
+                                ul
+                                    li
+                                        a(href="") Item
+                .Grid-cell.menu.bgc--white
                     nav
-                        .megamenu
-                            .megamenu_container
-                                .title.bgc--black.cl--white
-                                    h3 Categorías
                         ul.nav_site
                             - for (var x = 0; x < 6; x++)
                                 li
                                     a(href="#") Item
+                .Grid-cell.aside.aside-2.bgc--white
+                    ul.list--inline
+                        li
+                            span.icon.icon-instagram
+                            a.btn.btn_ghost(href="#")
+                        li
+                            span.icon.icon-twitter
+                            a.btn.btn_ghost(href="#")
+                        li
+                            span.icon.icon-facebook
+                            a.btn.btn_ghost(href="#")
         .container
             .row
                 .column.column-middle
