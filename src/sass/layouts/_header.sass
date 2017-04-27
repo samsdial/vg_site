@@ -1,1 +1,44 @@
 // header
+.nav
+    &_welcome
+        list-style: none
+        display: flex
+        -webkit-flex-flow: row wrap
+        justify-content: flex-end
+        padding-top: 2px
+        padding-bottom: 2px
+        margin: 5px
+        a
+            text-decoration: none
+            display: block
+            padding: 1rem
+            color: $silver
+            &:hover
+                color: $white
+    &_site
+        list-style: none
+        +display(flex)
+        +justify-content(flex-end)
+        padding-top: 2px
+        padding-bottom: 2px
+        margin: 5px
+        a
+            text-decoration: none
+            display: block
+            padding: 2rem
+            color: $blue
+            text-transform: uppercase
+            font-weight: 700
+            &:hover
+                color: $gray
+            &:active
+                color: $gray
+.shopping_cart
+    background-color: $white
+    border-radius: 20px
+    padding: 10px 22px 14px
+    &_menu
+        display: flex
+        justify-content: flex-end
+        margin-left: 3px
+        width: auto

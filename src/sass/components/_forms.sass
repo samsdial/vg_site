@@ -1,1 +1,36 @@
 // forms
+
+fieldset
+    border: none
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+    border: none;
+    -webkit-text-fill-color: $silver;
+    -webkit-box-shadow: 0 0 0px 1000px $white inset;
+    transition: background-color 5000s ease-in-out 0s;
+
+.search
+    #{$all-text-inputs}
+        &.field-search
+            outline: none
+            margin-top: 1em
+            padding:  0px 4em 0px 1.9em
+            height: 40px
+            width: 100%
+            background: rgba($white, 0.8)
+            color: $gray
+            position: relative
+            display: block
+            border: none
+            font-size: 13px
+            border-radius: 20px
+            -webkit-appearance: none
+            +transition(all 0.3s ease-in-out)
+            &:focus
+                + label
+                    &:after
+                        +transform(translate3d(0, 0, 0))
+                    span
+                        animation: anim-1 0.3s forwards

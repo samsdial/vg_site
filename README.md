@@ -16,5 +16,5 @@ $ docker-compose up
 
 ## gulp
 ```
-$ docker exec -it lys_web_1 gulp watch
+$ docker exec -it vg_web_1 gulp watch
 ```

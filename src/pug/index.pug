@@ -1,5 +1,20 @@
 extends ./base/layout.pug
 
 block content
-    .main
-        h2 home
+    main
+        .container
+            .row
+                .column
+                    nav
+                        .megamenu
+                            .megamenu_container
+                                .title.bgc--black.cl--white
+                                    h3 Categorías
+                        ul.nav_site
+                            - for (var x = 0; x < 6; x++)
+                                li
+                                    a(href="#") Item
+        .container
+            .row
+                .column.column-middle
+                    h2 Contenido
