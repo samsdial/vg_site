@@ -6,7 +6,7 @@
     border-radius: none
     font-size: 1.4rem
     font-family: $primary-font
-    padding: 0.8em 2.2em
+    padding: 0.9em 2.2em
     cursor: pointer
     text-transform: uppercase
     font-weight: 600
@@ -16,17 +16,27 @@
     &_site
         background-color: $blue
         color: $white
+        +press
+            background-color: $blueDark
         &--negative
-            background-color: $black
+            background-color: $darkGray
             color: $white
+            +press
+                background-color: $blue
         &--positive
             background-color: $white
             color: $blue
+            +press
+                background-color: $darkGray
 
     &_circle
         &--x12
             border-radius: 12px
         &--x50
             border-radius: 50px
+    &_newslatter
+        position: absolute
+        top: 0
+        right: 0
     &_ghost
         +btnGhost

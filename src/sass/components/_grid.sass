@@ -11,8 +11,6 @@
 .Grid-cell
     flex: 1
 
-section.container
-    padding: 12px
 section.Grid-cell
     position: relative
 .content
@@ -25,12 +23,6 @@ section.Grid-cell
         display: block
         margin-top: .8rem
         height: 1px
-
-.Demo.Holly
-    background: $silver
-    &:hover
-        background: $gray
-
 
 
 // Grid Style Modifiers
@@ -126,6 +118,10 @@ $gutter: 1rem
 .Grid--cols-12 > .Grid-cell
   flex: 0 0 calc(33.3333% - #{$gutter})
 
+.Grid--nav
+    .aside
+        flex: 1 100%
+
 .Grid--holly-grail
   .aside, .main, .menu
     flex: 1 100%
@@ -133,6 +129,11 @@ $gutter: 1rem
 .Grid--banner
     .apart
         flex: 1 100%
+
+.Grid--newslatter
+    .aside
+        flex: 1 100%
+
 /* One of -- columns*/
 .Grid--1of2 > .Grid-cell,
 .Grid--1of4 > .Grid-cell:first-of-type,
@@ -146,36 +147,45 @@ $gutter: 1rem
 .Grid--full > .Grid-cell
   flex: 0 0 100%
 
+
 /* Tablet (medium) screens */
 @media (min-width: 35rem)
-  .Grid--cols-4 > .Grid-cell
-    flex: 0 0 calc(50% - #{$gutter})
+    .Grid--cols-4 > .Grid-cell
+        flex: 0 0 calc(50% - #{$gutter})
 
-  .Grid--cols-6 > .Grid-cell
-    flex: 0 0 calc(33.3333% - #{$gutter})
+    .Grid--cols-6 > .Grid-cell
+        flex: 0 0 calc(33.3333% - #{$gutter})
 
-  .Grid--cols-12 > .Grid-cell
-    flex: 0 0 calc(16.6666% - #{$gutter})
+    .Grid--cols-12 > .Grid-cell
+        flex: 0 0 calc(16.6666% - #{$gutter})
 
-  .Grid--holly-grail
-    .aside
-      flex: 1 calc(25% - #{$gutter})
+    .Grid--holly-grail
+        .aside
+            flex: 1 calc(25% - #{$gutter})
 
-  .Grid--banner
-    .apart
-      flex: 1 calc(25% - #{$gutter})
+    .Grid--nav
+        .aside
+            flex: 1 calc(25% - #{$gutter})
 
-  .Grid--1of2 > .Grid-cell
-    flex: 0 0 50%
+    .Grid--newslatter
+        .aside
+            flex: 1 calc(25% - #{$gutter})
 
-  .Grid--1of6 > .Grid-cell:first-of-type
-    flex: 0 0 30%
+    .Grid--banner
+        .apart
+            flex: 1 calc(25% - #{$gutter})
 
-  .Grid--1of4 > .Grid-cell:first-of-type
-    flex: 0 0 50%
+    .Grid--1of2 > .Grid-cell
+        flex: 0 0 50%
 
-  .Grid--1of3 > .Grid-cell:first-of-type
-    flex: 0 0 100%
+    .Grid--1of6 > .Grid-cell:first-of-type
+        flex: 0 0 30%
+
+    .Grid--1of4 > .Grid-cell:first-of-type
+        flex: 0 0 50%
+
+    .Grid--1of3 > .Grid-cell:first-of-type
+        flex: 0 0 100%
 
 
 /* Large screens */
@@ -192,6 +202,20 @@ $gutter: 1rem
         .aside-1
             flex: 4
             padding-left: 0
+    .Grid--nav
+        .aside
+            flex: 1.25
+        .aside-1
+            flex: 4
+        .aside-2
+            flex: 1
+    .Grid--newslatter
+        .aside
+            flex: 1
+        .aside-1
+            flex: 3
+        .aside-2
+            flex: 4
     .Grid--holly-grail
         .menu
             flex: 3
@@ -201,6 +225,7 @@ $gutter: 1rem
             flex: 1
         .aside-1
             order: 1
+            flex: 2
         .menu,
         .main
             order: 2
@@ -262,3 +287,7 @@ $gutter: 1rem
     +MQ(S)
         +justify-content(start)
         text-align: start
+.Grid--nav
+    .aside
+        @media (min-width: 450px) and (max-width: 768px)
+            flex: 1 100%

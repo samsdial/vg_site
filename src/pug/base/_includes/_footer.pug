@@ -1,12 +1,94 @@
 section.max.bgc--blue
     .container
-        .Grid.Grid--full
-            .Grid-cell
+        .Grid.Grid--gutters.Grid--newslatter.pd_top--x30.pd_bottom--x30
+            .Grid-cell.aside.mg_top--x20
                 .content.cl--white
-                    h3 Suscribete
-footer.max.bgc--silver
+                    .title.txt_upper.txt_fonTwo.txt_app
+                        h3 Suscribete
+            .Grid-cell.aside.aside-1.mg_top--x30
+                .content.cl--white.txt_right.txt_app
+                    p  Ingresa tu E-mail y recibe nuestras ofertas
+            .Grid-cell.aside.aside-2
+                .content.cl--white
+                    .newslatter.mg_top--x20
+                        form#searchbox
+                            input.newslatter_input(type="text", placeholder="Tu Correo Electorinico")
+                            button.btn.btn_newslatter.btn_circle--x50.btn_site--negative(type="submit") Suscribir
+footer.max.bgc--silver.pd_top--x50
+    .container
+        .Grid.Grid--gutters.Grid--cols-6.hr_footer
+            .Grid-cell
+                .content
+                    span.logo.logo_vg
+                    h1.hidden Ventaja Genetica
+                    .info
+                        p Ventaja Genética distribuidor autorizado de Acceleted Gentics para Colombia.
+                    .list_info--footer
+                        ul.list--line
+                            li
+                                span.icon.icon-phone.mg_right--x10
+                                small 312 457 7392
+                            li
+                                span.icon.icon-phone.mg_right--x10
+                                small 312 457 7392
+                            li
+                                span.icon.icon-mail.mg_right--x10
+                                small info@vg.com
+            .Grid-cell
+                .content
+                    .title.txt_fonTwo.txt_upper.mg_bottom--x50
+                        h5 Información
+                    .list_info--footer
+                        ul.list--line
+                            - for (var x = 0; x < 6; x++)
+                                li
+                                    a(href="#") Item link uno
+            .Grid-cell
+                .content
+                    .title.txt_fonTwo.txt_upper.mg_bottom--x50
+                        h5 Información
+                    .list_info--footer
+                        ul.list--line
+                            - for (var x = 0; x < 6; x++)
+                                li
+                                    a(href="#") Item link uno
+            .Grid-cell
+                .content
+                    .title.txt_fonTwo.txt_upper.mg_bottom--x50
+                        h5 Mi Cuenta
+                    .list_info--footer
+                        ul.list--line
+                            - for (var x = 0; x < 6; x++)
+                                li
+                                    a(href="#") Item link uno
+            .Grid-cell
+                .content
+                    .title.txt_fonTwo.txt_upper.mg_bottom--x50
+                        h5 Extras
+                    .list_info--footer
+                        ul.list--line
+                            - for (var x = 0; x < 6; x++)
+                                li
+                                    a(href="#") Item link uno
+            .Grid-cell
+                .content
+                    .title.txt_fonTwo.txt_upper.mg_bottom--x50
+                        h5 Recomendados
+                    .list_info--footer
+                        ul.list--line
+                            li
+                                .prompt
+                                    .image(style="background-image: url(https://placehold.it/100x50/f20038/fff)")
+                                    .title.txt_fonTwo.txt_upper
+                                        h6 Info Animal
+                            li
+                                .prompt
+                                    .image(style="background-image: url(https://placehold.it/100x50/f20038/fff)")
+                                    .title.txt_fonTwo.txt_upper
+                                        h6 Info Animal
     .container
         .Grid.Grid--full
             .Grid-cell
-                h2 Footer
-
+                hr.hr.hr_site.hr_site--full
+                .content.txt_center
+                    small © Copyright 2017. Powered by Lequar.

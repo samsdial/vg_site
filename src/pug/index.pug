@@ -1,39 +1,42 @@
 extends ./base/layout.pug
 
 block content
+    .container
+        #header.Grid.grid--gutters.Grid--nav.efect
+            .Grid-cell.aside
+                .megamenu
+                    .megamenu_js.megamenu_container
+                        .megamenu_title.bgc--blue
+                            .title.txt_fonTwo.txt_upper.cl--white
+                                h5 Categorías
+                                span.icon.icon-plus
+                        .megamenu_v.bgc--white
+                            ul
+                                - for (var x = 0; x < 6; x++)
+                                    li
+                                        a(href="") Item
+            .Grid-cell.aside-1.bgc--white
+                nav
+                    a.nav_trigger.cl--white(href="#0")
+                        span
+                        h5.txt_upper.txt_fonTwo Menú
+                    ul.nav_site
+                        - for (var x = 0; x < 6; x++)
+                            li
+                                a(href="#") Item
+            .Grid-cell.aside.aside-2.bgc--white
+                ul.list--inline.txt_right.txt_app
+                    li
+                        span.icon.icon-instagram
+                        a.btn.btn_ghost(href="#")
+                    li
+                        span.icon.icon-twitter
+                        a.btn.btn_ghost(href="#")
+                    li
+                        span.icon.icon-facebook
+                        a.btn.btn_ghost(href="#")
     main
-        .container
-            .Grid.grid--gutters.Grid--holly-grail
-                .Grid-cell.aside.aside-1
-                    .megamenu
-                        .megamenu_container
-                            .megamenu_title.bgc--blue
-                                .title.txt_fonTwo.txt_upper.cl--white
-                                    h5 Categorías
-                                    span.icon.icon-plus
-                            .megamenu_v.bgc--white
-                                ul
-                                    - for (var x = 0; x < 6; x++)
-                                        li
-                                            a(href="") Item
-                .Grid-cell.menu.bgc--white
-                    nav
-                        ul.nav_site
-                            - for (var x = 0; x < 6; x++)
-                                li
-                                    a(href="#") Item
-                .Grid-cell.aside.aside-2.bgc--white
-                    ul.list--inline
-                        li
-                            span.icon.icon-instagram
-                            a.btn.btn_ghost(href="#")
-                        li
-                            span.icon.icon-twitter
-                            a.btn.btn_ghost(href="#")
-                        li
-                            span.icon.icon-facebook
-                            a.btn.btn_ghost(href="#")
-        .container
+        section#banner.container
             .Grid.Grid--gutters.Grid--banner
                 .Grid-cell.apart.bgc--white
                 .Grid-cell.apart.aside-1
@@ -54,3 +57,22 @@ block content
                                     p En las mejores condiciones para garantizar un óptimo desarrollo genetico
                                 .click
                                     a.btn.btn_site--positive.btn_circle--x50(href="#") ver mas.
+        section#categoriBox.container
+            .Grid.Grid--full
+                ul.list_bulls.list--inline.txt_center
+                    - for (var x = 0; x < 5; x++)
+                        li
+                            .bulls
+                                .title.txt_upper
+                                    h3 toro uno
+                                .image(style="background-image: url(https://placehold.it/600x350/f20038/fff)")
+        section#categoriBox.container
+            .Grid.Grid--full
+                .Grid--cell
+                    ul.list_bulls.list--inline.txt_center
+                        - for (var x = 0; x < 3; x++)
+                            li
+                                .bulls.bulls_new
+                                    .title.txt_upper
+                                        h3 toro Dos
+                                    .image(style="background-image: url(https://placehold.it/300x150/f20038/fff)")

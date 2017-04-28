@@ -6,5 +6,22 @@ hr
     display: block
 .hr
     &_site
-        height: 2px
+        height: 1.5px
+        background-color: $darkGray
         &--full
+            width: 100%
+    &_footer
+        .Grid-cell
+            position: relative
+            &:first-child
+                &:after
+                    display: none
+            &:after
+                +MQ(S)
+                    content: ""
+                    width: 1px
+                    height: 30vh
+                    background-color: $darkGray
+                    position: absolute
+                    top: 0
+                    left: 2px

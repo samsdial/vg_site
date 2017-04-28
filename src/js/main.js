@@ -82,3 +82,66 @@ $(function() {
         autoplaySpeed: 7000
     });
 });
+$(document).ready(function(){
+
+$('.nav_trigger').click(function(e){
+    $('.nav_site').toggleClass('active');
+    e.preventDefault();
+});
+
+$('.megamenu_js').click(function(e){
+    $(this).toggleClass('active');
+    e.preventDefault();
+});
+var myNavBar = {
+
+    flagAdd: true,
+
+    elements: [],
+
+    init: function (elements) {
+        this.elements = elements;
+    },
+
+    add : function() {
+        if(this.flagAdd) {
+            for(var i=0; i < this.elements.length; i++) {
+                document.getElementById(this.elements[i]).className += " fixed-theme";
+            }
+            this.flagAdd = false;
+        }
+    },
+
+    remove: function() {
+        for(var i=0; i < this.elements.length; i++) {
+            document.getElementById(this.elements[i]).className =
+                    document.getElementById(this.elements[i]).className.replace( /(?:^|\s)fixed-theme(?!\S)/g , '' );
+        }
+        this.flagAdd = true;
+    }
+
+};
+myNavBar.init(  [
+    "header"
+]);
+function offSetManager(){
+    var yOffset = 180;
+    var currYOffSet = window.pageYOffset;
+
+    if(yOffset < currYOffSet) {
+        myNavBar.add();
+    }
+    else if(yOffset > currYOffSet){
+        myNavBar.remove();
+    }
+    else if(currYOffSet == yOffset){
+        myNavBar.remove();
+    }
+
+}
+window.onscroll = function(e) {
+    offSetManager();
+};
+
+offSetManager();
+});

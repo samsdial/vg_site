@@ -1,10 +1,28 @@
+
 .slider
     position: relative
-    width: 820px
+    width: 350px
     height: 45vh
     overflow: hidden
     background-color: $blue
-
+    @media (min-width: $face + 50)
+        width: $face + 50
+    @media (min-width: $face + 100)
+        width: $face + 150
+    @media (min-width: $face + 150)
+        width: $face + 200
+    @media (min-width: $face + 200)
+        width: $face + 250
+    @media (min-width: $face + 250)
+        width: $face + 300
+    @media (min-width: $face + 300)
+        width: $face + 350
+    @media (min-width: $face + 350)
+        width: $face + 400
+    @media (min-width: $face + 400)
+        width: $face + 450
+    @media (min-width: 1024px)
+        width: 960px
 .slick_content
     position: relative
     opacity: 1
@@ -16,11 +34,24 @@
     +font-smoothing
     .info
         position: absolute
-        top: 25%
-        right: 12%
+        //top: 25%
+        bottom: 41%
+        right: 0%
         // +center(x)
         vertical-align: middle
-        text-align: right
+        text-align: center
+        width: 100%
+        +MQ(S)
+            top: 25%
+            bottom: 25%
+            right: 12%
+            text-align: right
+        .subtitle
+            +heading
+                font-size: 1.3rem
+        .title
+            +heading
+                font-size: 1.8rem
 .slider-nav
     .item
         position: relative
@@ -49,6 +80,13 @@
     height: 50px
     border-radius: 50%
     z-index: 90
+    +transition(all 0.3s ease-in-out)
+    &:before
+        +transition(all 0.3s ease-in-out)
+    +press
+        background-color: $white
+        &:before
+            color: $blue
 .slick-prev
     left: 2%
     &:before
@@ -60,6 +98,7 @@
         font-variant: normal
         text-transform: none
         font-size: 20px
+        color: $gray
 .slick-next
     right: 2%
     &:before
@@ -71,3 +110,4 @@
         font-variant: normal
         text-transform: none
         font-size: 20px
+        color: $gray

@@ -18,6 +18,9 @@
     width: 100% * $percentage
     float: $float-direction
 
+$sombraUno : 0 15px 10px rgba($black, 0.2)
+=box-shadow($sombraUno)
+    +prefixer(box-shadow, $sombraUno, webkit moz spec )
 //Boton fantasma
 =btnGhost
   position: absolute
