@@ -1,0 +1,44 @@
+extends ./base/layout.pug
+
+block content
+    .container
+        include ./base/megamenu.pug
+    .main
+        section.container
+            .Grid.Grid--gutters.Grid--1of2
+                .Grid-cell.mg_top--x50.mg_bottom--x50
+                    .content.single
+                        .image(style="background-image: url(https://placehold.it/600x500/f20038/fff)")
+                .Grid-cell.mg_top--x50
+                    .content.single
+                        .number.cl--silver.mg_bottom--x10
+                            h3 12345
+                        .title.txt_fonTwo.cl--black
+                            h3 Eco
+                        hr.hr.hr_site.mg_bottom--x20
+                        .info.mg_bottom--x20
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores laboriosam perferendis, reiciendis voluptatum! Animi maiores doloremque fugiat illo amet dolor, nam laborum dolores, ducimus, placeat a cumque, dolorum nobis quo.
+                        .bottom
+                            a.btn.btn_site(href="linkFuera") Ver Prueba
+        section.container
+            .title.txt_upper.txt_fonTwo.txt_center.mg_bottom--x20
+                h2 Productos Relacionados
+            .minislider
+                .category_slider
+                    .image(style="background-image: url(https://placehold.it/300x300/f20038/fff)")
+                    a.btn.btn_ghost(href="#")
+                .category_slider
+                    .image(style="background-image: url(https://placehold.it/300x300/f20038/fff)")
+                    a.btn.btn_ghost(href="#")
+                .category_slider
+                    .image(style="background-image: url(https://placehold.it/300x300/f20038/fff)")
+                    a.btn.btn_ghost(href="#")
+                .category_slider
+                    .image(style="background-image: url(https://placehold.it/300x300/f20038/fff)")
+                    a.btn.btn_ghost(href="#")
+                .category_slider
+                    .image(style="background-image: url(https://placehold.it/300x300/f20038/fff)")
+                    a.btn.btn_ghost(href="#")
+                .category_slider
+                    .image(style="background-image: url(https://placehold.it/300x300/f20038/fff)")
+                    a.btn.btn_ghost(href="#")

@@ -1,4 +1,50 @@
+// circle page list
 // circle
 .circle
-    display: inline-block
+    background-color: $white
     border-radius: 50%
+    display: block
+    height: 35px
+    outline: none
+    width: 35px
+    border: 2px solid $silver
+    position: relative
+    color: $silver
+    +transition(all 0.3s ease-in-out)
+    h2, h3, h4, h5, h6, p
+        position: absolute
+        top: 11%
+        left: 35%
+        +transition(all 0.3s ease-in-out)
+    span
+        position: absolute
+        top: 13%
+        font-size: 22px
+        +transition(all 0.3s ease-in-out)
+    span.left
+        left: 32%
+    span.right
+        right: 35%
+    +press
+        span.left
+            left: 25%
+        span.right
+            right: 27%
+
+.pages_list
+    li
+        .circle
+            +press
+                border: 2px solid $blue
+                background-color: $blue
+                color: $white
+                h2, h3, h4, h5, h6, p, span
+                    color: $white
+        &.active
+            .circle
+                background-color: rgba($gray, .2)
+                border: 2px solid rgba($silver, .2)
+                h2, h3, h4, h5, h6, p, span
+                    color: $lightGray
+                a.btn
+                    cursor: not-allowed

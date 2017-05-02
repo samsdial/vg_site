@@ -1,0 +1,47 @@
+extends ./base/layout.pug
+
+block content
+    .container
+        include ./base/megamenu.pug
+    .main
+        section.container
+            .Grid.Grid--full
+                .category_init.mg_bottom--x50
+                    .image(style="background-image: url('https://placehold.it/1920x250/f20038/fff')")
+                        .title.pd_top--x100i.pd_right--x50.txt_upper.txt_fonTwo.txt_right.txt_app.cl--white
+                            h2 Category Name
+                            p 14 Productos
+            .Grid.Grid--full
+                .category_content
+                    .title.txt_app
+                        p Category Name
+                    hr.hr.hr_site
+                    ul.category_list.list--inline.txt_center
+                        - for (var x = 0; x < 8; x++)
+                            li
+                                .image(style="background-image: url(https://placehold.it/300x300/f20038/fff)")
+                                .number.cl--silver.mg_bottom--x10
+                                    h4 1222222
+                                .title.txt_upper.cl--black.mg_bottom--x10
+                                    h5
+                                        b Nombre Toro
+                                a.btn.btn_ghost(href="single.html")
+                    .pages
+                        ul.pages_list.list--inline.txt_center
+                            li.active
+                                .circle
+                                    span.left.icon.icon-min-left
+                                    a.btn.btn_ghost(href="#")
+                            li.active
+                                .circle
+                                    h4 1
+                                    a.btn.btn_ghost(href="#")
+                            li
+                                .circle
+                                    h4 2
+                                    a.btn.btn_ghost(href="#")
+                            li
+                                .circle
+                                    span.right.icon.icon-min-right
+                                    a.btn.btn_ghost(href="#")
+

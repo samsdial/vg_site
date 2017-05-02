@@ -81,6 +81,11 @@ $(function() {
         autoplay: true,
         autoplaySpeed: 7000
     });
+    $('.minislider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4
+    });
 });
 $(document).ready(function(){
 
@@ -90,7 +95,7 @@ $('.nav_trigger').click(function(e){
 });
 
 $('.megamenu_js').click(function(e){
-    $(this).toggleClass('active');
+    $('#openmenu').toggleClass('active');
     e.preventDefault();
 });
 var myNavBar = {

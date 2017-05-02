@@ -51,6 +51,11 @@
         justify-content: flex-end
         margin-left: 3px
         width: auto
+.fixed-theme
+    .megamenu_container
+        &.active
+            .megamenu_v
+                display: none !important
 .megamenu
     &_container
         margin: 0
@@ -58,7 +63,7 @@
         cursor: pointer
         &.active
             .megamenu_v
-                display: block
+                display: block !important
     &_title
         border-width: 0 1px 0 0
         border-style: solid
@@ -160,7 +165,7 @@ $porcent : 67%
     @media (min-width: 1900px)
         width: 65%
     .megamenu_v
-        display: none
+        display: none !important
 
 .nav_trigger
     display: block

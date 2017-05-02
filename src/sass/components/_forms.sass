@@ -58,3 +58,53 @@ input:-webkit-autofill:focus
                         +transform(translate3d(0, 0, 0))
                     span
                         animation: anim-1 0.3s forwards
+.contact_form
+    position: relative
+    from
+        width: 100%
+    #{$all-text-inputs}
+        &.contac_input
+            outline: none
+            margin-top: .4em
+            margin-bottom: 1em
+            padding:  0px 4em 0px 1.9em
+            height: 40px
+            width: 100%
+            background: rgba($white, 1)
+            color: $gray
+            position: relative
+            display: block
+            border: none
+            font-size: 13px
+            border-radius: none
+            border: 2px solid $silver
+            -webkit-appearance: none
+            +transition(all 0.3s ease-in-out)
+            &:focus
+                + label
+                    &:after
+                        +transform(translate3d(0, 0, 0))
+                    span
+                        animation: anim-1 0.3s forwards
+        &.contac_txtArea
+            outline: none
+            margin-top: .4em
+            margin-bottom: 1em
+            padding:  2em 4em 1em 1.9em
+            width: 100%
+            background: rgba($white, 1)
+            color: $gray
+            position: relative
+            display: block
+            border: none
+            font-size: 13px
+            border-radius: none
+            border: 2px solid $silver
+            -webkit-appearance: none
+            +transition(all 0.3s ease-in-out)
+            &:focus
+                + label
+                    &:after
+                        +transform(translate3d(0, 0, 0))
+                    span
+                        animation: anim-1 0.3s forwards

@@ -1,0 +1,20 @@
+extends ./base/layout.pug
+
+block content
+    .container
+        include ./base/megamenu.pug
+    .main
+        section.container
+            .Grid.Grid--full
+                .Grid-cell.mg_top--x50
+                    ul.list_articles.list--inline.txt_center
+                        - for (var x = 0; x < 2; x++)
+                            li
+                                .articles
+                                    .image(style="background-image: url(https://placehold.it/300x300/f20038/fff)")
+                                    .title.txt_fonTwo.txt_upper.txt_left.mg_bottom--x10
+                                        h4 Titulo de articulo
+                                    .info.txt_left.mg_bottom--x10
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quaerat incidunt tenetur, rem reiciendis
+                                    .button.mg_bottom--x10
+                                        button.btn.btn_site.btn_site--full Ver Más.

@@ -1,0 +1,41 @@
+#header.Grid.grid--gutters.Grid--nav.efect
+    .Grid-cell.aside
+        .megamenu
+            #openmenu.megamenu_container
+                a.btn_ghost.megamenu_js
+                .megamenu_title.bgc--blue
+                    .title.txt_fonTwo.txt_upper.cl--white
+                        h5 Categorías
+                        span.icon.icon-plus
+                .megamenu_v.bgc--white(style="display: none;")
+                    ul
+                        - for (var x = 0; x < 6; x++)
+                            li
+                                a(href="category.html") Item Mega Menus
+    .Grid-cell.aside-1.bgc--white
+        nav
+            a.nav_trigger.cl--white(href="#0")
+                span
+                h5.txt_upper.txt_fonTwo Menú
+            ul.nav_site
+                li
+                    a(href="/docs/") Inicio
+                li
+                    a(href="about.html") Quíenes Somos
+                li
+                    a(href="history.html") Historia
+                li
+                    a(href="articles.html") Artículos
+                li
+                    a(href="contact.html") Contacto
+    .Grid-cell.aside.aside-2.bgc--white
+        ul.list--inline.txt_right.txt_app
+            li
+                span.icon.icon-instagram
+                a.btn.btn_ghost(href="#")
+            li
+                span.icon.icon-twitter
+                a.btn.btn_ghost(href="#")
+            li
+                span.icon.icon-facebook
+                a.btn.btn_ghost(href="#")

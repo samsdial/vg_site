@@ -2,54 +2,22 @@ extends ./base/layout.pug
 
 block content
     .container
-        #header.Grid.grid--gutters.Grid--nav.efect
-            .Grid-cell.aside
-                .megamenu
-                    .megamenu_js.megamenu_container
-                        .megamenu_title.bgc--blue
-                            .title.txt_fonTwo.txt_upper.cl--white
-                                h5 Categorías
-                                span.icon.icon-plus
-                        .megamenu_v.bgc--white
-                            ul
-                                - for (var x = 0; x < 6; x++)
-                                    li
-                                        a(href="") Item
-            .Grid-cell.aside-1.bgc--white
-                nav
-                    a.nav_trigger.cl--white(href="#0")
-                        span
-                        h5.txt_upper.txt_fonTwo Menú
-                    ul.nav_site
-                        - for (var x = 0; x < 6; x++)
-                            li
-                                a(href="#") Item
-            .Grid-cell.aside.aside-2.bgc--white
-                ul.list--inline.txt_right.txt_app
-                    li
-                        span.icon.icon-instagram
-                        a.btn.btn_ghost(href="#")
-                    li
-                        span.icon.icon-twitter
-                        a.btn.btn_ghost(href="#")
-                    li
-                        span.icon.icon-facebook
-                        a.btn.btn_ghost(href="#")
+        include ./base/megamenu.pug
     main
         section#banner.container
             .Grid.Grid--gutters.Grid--banner
                 .Grid-cell.apart.bgc--white
                 .Grid-cell.apart.aside-1
                     .slider
-                        .slick_content(style="background-image: url(images/banner/01.png)")
+                        .slick_content(style="background-image: url('https://placehold.it/960x650/f20038/fff')")
                             .info
                                 .title.txt_size--x50.txt_upper.cl--white
-                                    h2 Titulo
+                                    h2 Titulos
                                 .subtitle.mg_bottom--x20.txt_capital.cl--white
                                     p subtitulo
                                 .click
                                     a.btn.btn_site--positive.btn_circle--x50(href="#") ver mas.
-                        .slick_content(style="background-image: url(images/banner/01.png)")
+                        .slick_content(style="background-image: url(https://placehold.it/960x650/FF8C00/fff)")
                             .info
                                 .title.txt_size--x50.txt_upper.cl--white
                                     h2 Mantenemos A los Animales
@@ -58,21 +26,26 @@ block content
                                 .click
                                     a.btn.btn_site--positive.btn_circle--x50(href="#") ver mas.
         section#categoriBox.container
-            .Grid.Grid--full
+            .Grid.Grid--full.mg_bottom--x20
                 ul.list_bulls.list--inline.txt_center
                     - for (var x = 0; x < 5; x++)
                         li
                             .bulls
-                                .title.txt_upper
-                                    h3 toro uno
-                                .image(style="background-image: url(https://placehold.it/600x350/f20038/fff)")
-        section#categoriBox.container
+                                .title.txt_upper.mg_bottom--x10
+                                    h4 Toro uno
+                                .image(style="background-image: url(https://placehold.it/300x300/f20038/fff)")
+                            a.btn.btn_ghost(href="#")
+        section#categoriBox.container.bgc--silver.pd_top--x20
             .Grid.Grid--full
-                .Grid--cell
+                .Grid-cell
+                    .title.txt_upper.cl--blue.txt_center.mg_bottom--x20
+                        h3
+                            b Nuevos Toros
                     ul.list_bulls.list--inline.txt_center
                         - for (var x = 0; x < 3; x++)
                             li
                                 .bulls.bulls_new
-                                    .title.txt_upper
+                                    .title.txt_upper.mg_bottom--x10
                                         h3 toro Dos
-                                    .image(style="background-image: url(https://placehold.it/300x150/f20038/fff)")
+                                    .image(style="background-image: url(https://placehold.it/300x300/f20038/fff)")
+                                a.btn.btn_ghost(href="#")
