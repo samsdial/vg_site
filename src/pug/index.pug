@@ -6,7 +6,8 @@ block content
     main
         section#banner.container
             .Grid.Grid--gutters.Grid--banner
-                .Grid-cell.apart.bgc--white
+                .Grid-cell.apart.bgc--white.ps_relative
+                    span.logo.logo_ac
                 .Grid-cell.apart.aside-1
                     .slider
                         .slick_content(style="background-image: url('https://placehold.it/960x650/f20038/fff')")
@@ -15,16 +16,18 @@ block content
                                     h2 Titulos
                                 .subtitle.mg_bottom--x20.txt_capital.cl--white
                                     p subtitulo
-                                .click
-                                    a.btn.btn_site--positive.btn_circle--x50(href="#") ver mas.
+                                .sponsor.ps_relative
+                                    span.logo.logo_ac
+                                //- .click
+                                //-     a.btn.btn_site--positive.btn_circle--x50(href="#") ver mas.
                         .slick_content(style="background-image: url(https://placehold.it/960x650/FF8C00/fff)")
                             .info
                                 .title.txt_size--x50.txt_upper.cl--white
                                     h2 Mantenemos A los Animales
                                 .subtitle.mg_bottom--x20.txt_capital.cl--white
                                     p En las mejores condiciones para garantizar un óptimo desarrollo genetico
-                                .click
-                                    a.btn.btn_site--positive.btn_circle--x50(href="#") ver mas.
+                                .sponsor.ps_relative
+                                    span.logo.logo_ac
         section#categoriBox.container
             .Grid.Grid--full.mg_bottom--x20
                 ul.list_bulls.list--inline.txt_center

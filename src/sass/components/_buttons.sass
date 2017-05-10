@@ -36,12 +36,24 @@
             color: $blue
             +press
                 background-color: $darkGray
+        &--search
+            background-color: transparent
+            color: $darkGray
+            padding: 0.9em 1.2em
+            span.icon
+                color: $darkGray
+                +transition(all 0.3s ease-in-out)
+            +press
+                color: $blue
+                span.icon
+                    color: $blue
 
     &_circle
         &--x12
             border-radius: 12px
         &--x50
             border-radius: 50px
+    &_search,
     &_newslatter
         position: absolute
         top: 0
