@@ -13,16 +13,20 @@ block content
                 from#contact
                     .Grid.Grid--gutters.Grid--1of3
                         .Grid-cell
-                            label Asunto
-                            input.contac_input(type="text", placeholder="Tipo de Contacto")
-                            label Nombre y Apellidos
-                            input.contac_input(type="text", placeholder="Mi nombre completo")
-                            label Correo Electronico
-                            input.contac_input(type="email", placeholder="micorreo@empresa.com")
-                            label Referencia
-                            input.contac_input(type="text", placeholder="No. 12344")
-                        .Grid-cell
-                            label Mensaje
+                            .affair.error
+                                label *Asunto
+                                input.contac_input(type="text", placeholder="Tipo de Contacto")
+                            .fullName.error
+                                label *Nombre y Apellidos
+                                input.contac_input(type="text", placeholder="Mi nombre completo")
+                            .email.error
+                                label *Correo Electronico
+                                input.contac_input(type="email", placeholder="micorreo@empresa.com")
+                            .reference.error
+                                label Referencia
+                                input.contac_input(type="text", placeholder="No. 12344")
+                        .Grid-cell.message.error
+                            label *Mensaje
                             textarea.contac_txtArea(type="text", rows="16", cols="60", placeholder="Cuentanos ahora")
                     .Grid.Grid--full
                         .Grid-cell.mg_top--x20.mg_bottom--x20

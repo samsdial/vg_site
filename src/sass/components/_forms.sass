@@ -7,12 +7,15 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus
     border: none;
-    -webkit-text-fill-color: $silver;
+    -webkit-text-fill-color: $blue;
     -webkit-box-shadow: 0 0 0px 1000px $white inset;
     transition: background-color 5000s ease-in-out 0s;
 
 .search
     position: relative
+    &.mg
+        @media (min-width: 768px)
+            margin-top: 50px
     #{$all-text-inputs}
         &.field-search
             outline: none
@@ -37,6 +40,9 @@ input:-webkit-autofill:focus
                         animation: anim-1 0.3s forwards
 .newslatter
     position: relative
+    .register.error
+        input.newslatter_input
+            border: 1px solid red
     #{$all-text-inputs}
         &.newslatter_input
             outline: none
@@ -109,3 +115,37 @@ input:-webkit-autofill:focus
                         +transform(translate3d(0, 0, 0))
                     span
                         animation: anim-1 0.3s forwards
+.contact_form
+    label
+        position: relative
+        width: 100%
+        display: block
+.affair
+    &.error
+        label
+            &:before
+                content: "Escriba el asunto."
+.fullName
+    &.error
+        label
+            &:before
+                content: "Escriba su Nomble completo."
+.email
+    &.error
+        label
+            &:before
+                content: "Escriba su Email."
+.message
+    &.error
+        label
+            &:before
+                content: "Escriba su mensaje para nosotros."
+
+
+.error
+    label
+        &:before
+            font-size: 10px
+            color: red
+            position: absolute
+            right: 0

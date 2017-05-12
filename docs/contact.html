@@ -51,13 +51,13 @@
       <div class="container">
         <div class="Grid Grid--gutters Grid--1of3 Grid--nested">
           <div class="Grid-cell">
-            <div class="content"><span class="logo logo_vg"></span>
+            <div class="content txt_app"><span class="logo logo_vg"></span>
               <h1 class="hidden">Ventaja Genetica</h1>
             </div>
           </div>
           <div class="Grid-cell">
             <div class="content">
-              <div class="search mg_top--x50">
+              <div class="search">
                 <form id="searchbox">
                   <input class="field-search" type="text" placeholder="Buscar...">
                   <button class="btn btn_search btn_site--search" type="submit"><span class="icon icon-search"></span></button>
@@ -66,11 +66,7 @@
             </div>
           </div>
           <div class="Grid-cell">
-            <div class="content">
-              <div class="shopping_cart_menu mg_top--x50">
-                <div class="shopping_cart"><small>icon</small></div>
-              </div>
-            </div>
+            <div class="content"></div>
           </div>
         </div>
       </div>
@@ -134,17 +130,25 @@
           <from id="contact">
             <div class="Grid Grid--gutters Grid--1of3">
               <div class="Grid-cell">
-                <label>Asunto</label>
-                <input class="contac_input" type="text" placeholder="Tipo de Contacto">
-                <label>Nombre y Apellidos</label>
-                <input class="contac_input" type="text" placeholder="Mi nombre completo">
-                <label>Correo Electronico</label>
-                <input class="contac_input" type="email" placeholder="micorreo@empresa.com">
-                <label>Referencia</label>
-                <input class="contac_input" type="text" placeholder="No. 12344">
+                <div class="affair error">
+                  <label>*Asunto</label>
+                  <input class="contac_input" type="text" placeholder="Tipo de Contacto">
+                </div>
+                <div class="fullName error">
+                  <label>*Nombre y Apellidos</label>
+                  <input class="contac_input" type="text" placeholder="Mi nombre completo">
+                </div>
+                <div class="email error">
+                  <label>*Correo Electronico</label>
+                  <input class="contac_input" type="email" placeholder="micorreo@empresa.com">
+                </div>
+                <div class="reference error">
+                  <label>Referencia</label>
+                  <input class="contac_input" type="text" placeholder="No. 12344">
+                </div>
               </div>
-              <div class="Grid-cell">
-                <label>Mensaje</label>
+              <div class="Grid-cell message error">
+                <label>*Mensaje</label>
                 <textarea class="contac_txtArea" type="text" rows="16" cols="60" placeholder="Cuentanos ahora"></textarea>
               </div>
             </div>

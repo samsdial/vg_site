@@ -20,7 +20,7 @@
     @media (min-width: $face + 100)
         width: $face + 150
     @media (min-width: $face + 150)
-        width: $face + 200
+        width: 500px
     @media (min-width: $face + 200)
         width: $face + 250
     @media (min-width: $face + 250)
@@ -45,10 +45,8 @@
     +font-smoothing
     .info
         position: absolute
-        //top: 25%
         bottom: 41%
         right: 0%
-        // +center(x)
         vertical-align: middle
         text-align: center
         width: 100%
@@ -57,11 +55,15 @@
             bottom: 25%
             right: 12%
             text-align: right
+        +MQ(M)
+            width: 22%
         .subtitle
             +heading
+                font-family: $second-font
                 font-size: 1.3rem
         .title
             +heading
+                font-family: $second-font
                 font-size: 1.8rem
 .slider-nav
     .item
